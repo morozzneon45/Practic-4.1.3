@@ -1,0 +1,144 @@
+@font-face {
+  font-family: 'TTLakes';
+  font-style: normal;
+  font-weight: 300;
+  src: local('TTLakes'),
+       url('Assets/Fonts/TTLakes/TTLakes-Light.woff2') format('woff2'),
+       url('Assets/Fonts/TTLakes/TTLakes-Light.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'TTLakes';
+  font-style: normal;
+  font-weight: 400;
+  src: local('TTLakes'),
+       url('Assets/Fonts/TTLakes/TTLakes-Regular.woff2') format('woff2'),
+       url('Assets/Fonts/TTLakes/TTLakes-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'TTLakes';
+  font-style: normal;
+  font-weight: 500;
+  src: local('TTLakes'),
+       url('Assets/Fonts/TTLakes/TTLakes-Medium.woff2') format('woff2'),
+       url('Assets/Fonts/TTLakes/TTLakes-Medium.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'TTLakes';
+  font-style: normal;
+  font-weight: 700;
+  src: local('TTLakes'),
+       url('Assets/Fonts/TTLakes/TTLakes-Bold.woff2') format('woff2'),
+       url('Assets/Fonts/TTLakes/TTLakes-Bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'TTLakes';
+  font-style: normal;
+  font-weight: 800;
+  src: local('TTLakes'),
+       url('Assets/Fonts/TTLakes/TTLakes-Black.woff2') format('woff2'),
+       url('Assets/Fonts/TTLakes/TTLakes-Black.woff') format('woff');
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+  width: 320px;
+  height: 1024px;
+  font-family: "TTLakes";
+}
+
+button {
+  border: none;
+  background: none;
+}
+
+main {
+  margin-top: 55px;
+
+}
+
+.header__navigation {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  column-gap: 16px;
+  padding-top: 15px;
+  padding-left: 24px;
+  justify-content: space-between;
+}
+
+.icon--search {
+  padding-right: 24px;
+}
+
+.tab {
+  display: inline-block;
+  margin-right: 10px;
+  padding-top: 40px;
+  padding-right: 30px;
+}
+
+.tab:first-child {
+  padding-top: 0;
+}
+
+.tab--active:hover {
+  color: #808080;
+}
+
+
+.tab--active:hover::before {
+  content: "";
+  position: absolute;
+  height: 40px;
+  width: 4px;
+  left: 0;
+  background-color: #41F6D7;
+  border-radius: 0 10px 10px 0;
+}
+
+.footer__navigation {
+  margin-top: 268px;
+  display: flex;
+  align-items: left;
+  flex-direction: row;
+  column-gap: 10px;
+  padding-top: 15px;
+  padding-left: 24px;
+}
+
+.header__logo {
+  margin-right: 70px;
+}
+
+.footer__contact {
+  margin-left: 27px;
+}
+
+.footer__contact--number {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.footer__language {
+  margin-left: 24px;
+}
+
+span {
+  margin-left: 10px;
+}
+
+span:first-child {
+  margin: 0;
+}
+
+.footer__language--ru {
+  color: gray;
+}
