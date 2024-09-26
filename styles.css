@@ -49,8 +49,9 @@ body, html {
 }
 
 body {
+  box-shadow: 10px 0 20px rgba(0, 0, 0, 0.1);
   width: 320px;
-  height: 1024px;
+  height: auto;
   font-family: "TTLakes";
 }
 
@@ -76,6 +77,10 @@ main {
 
 .icon--search {
   padding-right: 24px;
+}
+
+.header__logo {
+  margin-right: 40px;
 }
 
 .tab {
@@ -114,10 +119,6 @@ main {
   padding-left: 24px;
 }
 
-.header__logo {
-  margin-right: 70px;
-}
-
 .footer__contact {
   margin-left: 27px;
 }
@@ -141,4 +142,8 @@ span:first-child {
 
 .footer__language--ru {
   color: gray;
+}
+
+.footer__language {
+  padding-bottom: 24px;
 }
