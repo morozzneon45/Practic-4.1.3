@@ -49,12 +49,14 @@ body, html {
 }
 
 body {
+  position: absolute;
+  left: 0;
+  top: 0;
   box-shadow: 10px 0 20px rgba(0, 0, 0, 0.1);
   width: 320px;
-  height: auto;
   font-family: "TTLakes";
-}
-
+  overflow-y: auto;
+  }
 button {
   border: none;
   background: none;
@@ -88,6 +90,7 @@ main {
   margin-right: 10px;
   padding-top: 40px;
   padding-right: 30px;
+  transition: color 0.5s ease, filter 0.5s ease;
 }
 
 .tab:first-child {
@@ -102,11 +105,23 @@ main {
 .tab--active:hover::before {
   content: "";
   position: absolute;
-  height: 40px;
-  width: 4px;
   left: 0;
+  height: 40px;
+  width: 5px;
   background-color: #41F6D7;
   border-radius: 0 10px 10px 0;
+  animation: fadeIn 0.5s ease forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 .footer__navigation {
